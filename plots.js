@@ -80,7 +80,7 @@ d3.json("samples.json").then((data) => {
     });
     var result = resultArray[0];
 
-    //create bubble chart
+    // create bubble chart
     var otu_ids = result.otu_ids
     .map((idnum) => {
         return idnum;
@@ -122,7 +122,7 @@ d3.json("samples.json").then((data) => {
     {
         domain: { x: [0, 1], y: [0, 1] },
         value: result.wfreq,
-        title: "Belly Button Washing Scrubs per Week",
+        title: "Belly Button Scrubs per Week",
         type: "indicator",
         mode: "gauge+number",
         gauge: {
